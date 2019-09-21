@@ -11,12 +11,16 @@ print(' '.join(reverse_sorted))
 '''
 
 in_string = input('Enter a string: ')
-
 temp = ''
 
 for i in in_string:
     temp = i + temp
 
-print("Reverse:", temp)
+print("Reverse:\n", temp)
+print('Ascending sorted:')
+print(''.join(sorted(in_string)))
+print('Decending sorted:')
+print(''.join(sorted(in_string, reverse = True)))
 
-print(sorted(in_string, reverse = True))
+########
+input()
