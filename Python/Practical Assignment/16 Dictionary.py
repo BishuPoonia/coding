@@ -1,24 +1,46 @@
+# Creating a dictionary
 weeks = {1: 'Sunday', 2: 'Monday', 3:'Tuesday',
-         4: 'Wednesday', 5:'Thursday', 6:'Friday', 7:'Saturday'}
-
-holidays = weeks[1] + str(' ') + weeks[7]
-print("Holidays:", holidays)
+         4: 'Wednesday', 5:'Thursday',
+          6:'Friday', 7:'Saturday'}
 
 pen = {'Blue': 5, 'Black': 10, 'Red': 2}
-total_pens = pen['Blue'] + pen['Black'] + pen['Red']
-print('Number of all pen:', total_pens)
-
-print('Types of pen:', len(pen))
-x = str(pen)
-print('Now "' + x + '" is a string.')
 
 print('Values in Pen:')
 for i in pen.values():
-    print(i)
+    print(i, end=' ')
+print()
 
 print('Items in Pen:')
 for i in pen.items():
-    print(i)
+    print(i, end=' ')
+print()
 
-del weeks[5]
+# Concatenating two dictionary values
+holidays = weeks[7] + str(' and ') + weeks[1]
+print("Holidays:", holidays)
+
+# Addition of dictionary values
+total_pens = pen['Blue'] + pen['Black'] + pen['Red']
+print('Number of all pen:', total_pens)
+
+# counting length of dictionary
+print('Types of pen:', len(pen))
+
+# Converting dictionary into a string
+x = str(pen)
+print('Now "' + x + '" is a string.')
+
+# Adding an item in dictionary
+pen['Green'] = 2
+print(pen)
+
+# Modifying an item (change a value) in dictionary
+pen['Green'] = 5
+print(pen)
+
+# Deleting an item from dictionary
+del weeks[6]
 print(weeks)
+
+#############
+input()

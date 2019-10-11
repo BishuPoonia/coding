@@ -1,4 +1,5 @@
-''''some_string = str(input("Enter a string: "))
+"""
+some_string = str(input("Enter a string: "))
 print(''.join(sorted(some_string, key=str.lower)))
 print(''.join(sorted(some_string, key=str.lower, reverse = True)))
 
@@ -8,15 +9,18 @@ reverse_sorted = sorted(in_string, key=str.lower, reverse = True)
 print(' '.join(in_string))
 print(' '.join(sorted_string))
 print(' '.join(reverse_sorted))
-'''
+"""
+
+# Take a string from user, print in in reverse then sort
+# it in ascending and descending order.
 
 in_string = input('Enter a string: ')
-temp = ''
+rev = ''
 
 for i in in_string:
-    temp = i + temp
+    rev = i + rev
 
-print("Reverse:\n", temp)
+print("Reverse:\n", rev)
 print('Ascending sorted:')
 print(''.join(sorted(in_string)))
 print('Decending sorted:')
