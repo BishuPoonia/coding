@@ -1,4 +1,4 @@
-import random as r
+import random
 
 Dead = False
 print("Russian Roulette begins:\n")
@@ -6,7 +6,7 @@ print("Russian Roulette begins:\n")
 while not Dead:
 
     # Bob spins the cylinder of Revolver
-    gun = r.choice([0, 0, 0, 1, 0, 0])
+    gun = random.choice([0, 0, 0, 1, 0, 0])
 
     # Bob points the gun at his head and pulls the trigger
     Bob = gun
@@ -18,7 +18,7 @@ while not Dead:
         break;
 
     # Dimitri spins the cylinder of Revolver    
-    gun = r.choice([0, 0, 0, 1, 0, 0])
+    gun = random.choice([0, 0, 0, 1, 0, 0])
 
     # Dimitri points the gun at his head and pulls the trigger
     Dimitri = gun
@@ -29,4 +29,4 @@ while not Dead:
         print("BANG!! Dimitri got Shot and Died!")
 
 ######
-input("\npress any key to exit..")
+#input("\npress any key to exit..")
